@@ -1,10 +1,12 @@
 import random
 import time
 
-import pygetwindow
 
-
-def shufflerrandom(game_windows: list, start: int, end: int, multiplier: int):
+def shuffler_random(game_windows: list,
+                    start: int,
+                    end: int,
+                    multiplier: int | float
+                    ) -> None:
     current_window: int = 0
     next_window: int = 0
 
@@ -23,7 +25,8 @@ def shufflerrandom(game_windows: list, start: int, end: int, multiplier: int):
         current_window = next_window
 
 
-def shufflerfixed(game_windows: list, time_of_switch: int):
+def shuffler_fixed(game_windows: list,
+                   time_of_switch: int):
     current_window: int = 0
     next_window: int = 0
 

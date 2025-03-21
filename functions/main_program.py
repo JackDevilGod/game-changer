@@ -40,7 +40,7 @@ def main():
         time_of_switch: int = int(int(input(unit + " of switching")) * multiplier)
 
         shufflerfixed(windows, time_of_switch)
-        
+
 
 if __name__ == "__main__":
     main()
